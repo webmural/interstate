@@ -26,6 +26,12 @@ footer {
   font-size: 1em;
 }
 
+@media (prefers-reduced-motion: reduced) {
+  footer {
+    transition: none;
+  }
+}
+
 :focus {
   outline-style: double;
   outline-width: thick;
