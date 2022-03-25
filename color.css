@@ -1,31 +1,33 @@
 ::selection {
-  background: darkviolet;
-  color: gold;
+  background: gold;
+  color: black;
 }
 
 :root {
-  color: #200222;
-  background: skyblue;
+  color: snow;
+  background: indigo;
 }
 
-@media (prefers-color-scheme: dark) {
+header {
+  color: black;
+  background: crimson;
+}
+
+@media
+  (prefers-contrast: less),
+  (prefers-color-scheme: light) {
   :root {
-    background: deepskyblue;
+    color: black;
+    background: steelblue;
   }
 }
 
-@media (prefers-contrast: less) {
-  :root {
-    color: #33113d;
-  }
+:link,
+:visited {
+  color: inherit;
+  text-decoration-style: double;
 }
 
-:any-link {
-  color: #50a;
-  text-decoration-style: dotted;
-}
-
-mark {
-  color: #11111d;
-  background: magenta;
+:focus {
+  outline-color: currentColor;
 }
