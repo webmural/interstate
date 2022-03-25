@@ -18,12 +18,12 @@ header {
 }
 
 footer {
-  font-size: 0;
+  font-size: 1em;
   transition: 2s ease-in;
 }
 
-#edit:target footer {
-  font-size: 1em;
+:root:target footer {
+  font-size: 0;
 }
 
 @media (prefers-reduced-motion: reduced) {
